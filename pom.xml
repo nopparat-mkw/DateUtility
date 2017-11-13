@@ -6,15 +6,69 @@
 
     <groupId>com.github.nopparat-mkw</groupId>
     <artifactId>dateutility</artifactId>
-    <version>0.0.1</version>
+    <description>lib for date util</description>
+    <version>1.0</version>
     <packaging>jar</packaging>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.7.25</version>
-        </dependency>
-    </dependencies>
+    <name>dateutility</name>
+
+    <issueManagement>
+        <url>https://github.com/nopparat-mkw/DateUtility/issues</url>
+        <system>GitHub Issues</system>
+    </issueManagement>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>https://github.com/nopparat-mkw/DateUtility</url>
+        <connection>scm:git:git://github.com/nopparat-mkw/DateUtility.git</connection>
+        <developerConnection>scm:git:git@github.com:nopparat-mkw/DateUtility.git</developerConnection>
+    </scm>
+
+    <developers>
+        <developer>
+            <email>nopparat.mueangkaew@gmail.com</email>
+            <name>Nopparat Mueangkaew</name>
+            <url>https://github.com/nopparat-mkw</url>
+            <id>nopparat-mkw</id>
+        </developer>
+    </developers>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+        </repository>
+    </distributionManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+                <version>1.6.7</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <serverId>ossrh</serverId>
+                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
