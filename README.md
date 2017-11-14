@@ -117,3 +117,10 @@
   </settings>
   ```
   - in pom.xml inside project [see](https://github.com/nopparat-mkw/DateUtility/blob/master/pom.xml)
+  
+### Reference
+- https://devahoy.com/posts/how-to-push-android-library-to-maven-central/
+- https://inthecheesefactory.com/blog/how-to-upload-library-to-jcenter-maven-central-as-dependency/th
+- https://cerb.ai/guides/mail/gpg-setup-on-mac/#publishing-your-public-key
+- http://central.sonatype.org/pages/working-with-pgp-signatures.html
+- http://central.sonatype.org/pages/apache-maven.html
