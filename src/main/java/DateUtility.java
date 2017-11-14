@@ -7,7 +7,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-public class DateUtil {
+public class DateUtility {
     public static final String TH = "th_TH";
     public static final String EN = "en_US";
 
@@ -1123,8 +1123,8 @@ public class DateUtil {
 
     public static boolean validateMonthYear(String fromMonth, String fromYear, String toMonth, String toYear) {
         if (fromMonth != null && fromYear != null && toMonth != null && toYear != null) {
-            Date from = DateUtil.getDateEn("1/" + fromMonth + "/" + fromYear);
-            Date to = DateUtil.getDateEn("1/" + toMonth + "/" + toYear);
+            Date from = DateUtility.getDateEn("1/" + fromMonth + "/" + fromYear);
+            Date to = DateUtility.getDateEn("1/" + toMonth + "/" + toYear);
             System.out.println("from = " + from + ", to = " + to);
             if (from.compareTo(to) < 0) {
                 return true;
