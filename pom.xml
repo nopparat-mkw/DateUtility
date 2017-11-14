@@ -7,7 +7,7 @@
     <!-- groupId same create sonatype issue `com.github.nopparat-mkw` -->
     <groupId>com.github.nopparat-mkw.dateutility</groupId>
     <artifactId>dateutility</artifactId>
-    <version>1.0.1</version>
+    <version>3.0</version>
     <packaging>jar</packaging>
 
     <name>dateutility</name>
