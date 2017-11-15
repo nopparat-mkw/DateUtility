@@ -1,4 +1,5 @@
-# Upload Library to Maven Central
+# Upload Library to Maven Central (Change Repo to [gitlab](https://gitlab.com/nopparat/DateUtility))
+Not a valid package name, it will not be possoble to create a java class inside
 
 ## System & Tools
 - Max os Sierra version 10.12.6
